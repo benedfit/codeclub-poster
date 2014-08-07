@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Club poster generator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Code Club volunteers, use this (unofficial) tool to create posters to promote their club">
+    <style>
+      body {
+        background: #f8faf4;
+        border-top: 7px solid #d3e8d0;
+        color: #666;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.25em;
+        line-height: 1.5;
+        margin: 0;
+        padding: 2em;
+        text-align: center;
+      }
+      h1 {
+        color: #393;
+        font-family: 'museo-sans-rounded', Arial, sans-serif;
+        line-height: 1.25;
+        text-rendering: optimizeLegibility;
+      }
+      textarea {
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: inherit;
+        display: block;
+        font-family: inherit;
+        font-size: 1em;
+        height: 300px;
+        padding: 1em;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+      }
+      .print {
+        background: #393;
+        border-radius: 1000px;
+        color: #fff;
+        padding: 5px 18px 4px;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        text-decoration: none;
+        z-index: 1000;
+      }
+      .print:hover {
+        background: #267326;
+      }
+      .logo {
+        margin: 0 0 2em;
+      }
+      .top-left {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+      }
+      .top-right {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+      }
+      .bottom {
+        position: absolute;
+        bottom: 2em;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .page {
+        background: #fff;
+        border: 1px solid #d1d1d1;
+        height: 922px;
+        margin: auto;
+        overflow: hidden;
+        padding: 3em;
+        position: relative;
+        width: 595px;
+      }
+      @media print {
+        body {
+          border: 0;
+          padding: 0;
+        }
+        textarea {
+          border: 0;
+        }
+        .page {
+          border: 0;
+        }
+        .print {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ana7hlh',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document)
+    </script>
+  </head>
+  <body>
+    <a href="#" onclick="window.print(); return false" class="print">Print</a>
+    <div class="page"><img src="https://www.codeclub.org.uk/assets/logo-8f4e1ca6525af0d4b681e5bea5dbe3d6.svg" class="logo"/><img src="https://www.codeclub.org.uk/assets/robots/header-1-ad16e84a4af325ce3f5de5f67c2c47e3.png" class="top-left"/><img src="https://www.codeclub.org.uk/assets/robots/header-2-db6e97da940829c39a4cbdde958f2909.png" class="top-right"/><img src="https://www.codeclub.org.uk/system/files/032013/515064749d200f088d00013b/large/line-up.png?1368018954" class="bottom"/>
+      <h1>Would you like to learn how to make computer games, animations and websites?</h1>
+      <p>Code Club is a nationwide network of free volunteer-led after-school coding clubs for children aged 9-11.</p>
+      <textarea>Put the details of your Code Club here</textarea>
+    </div>
+  </body>
+</hmtl>
