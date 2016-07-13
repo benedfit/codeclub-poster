@@ -39,6 +39,8 @@
         text-align: center;
         width: 100%;
         overflow: hidden;
+        position: relative;
+        z-index: 2;
       }
       .print {
         background: #393;
@@ -56,16 +58,20 @@
       }
       .logo {
         margin: 0 0 2em;
+        position: relative;
+        z-index: 2;
       }
       .top-left {
         position: absolute;
         top: 2em;
         left: 2em;
+        z-index: 1;
       }
       .top-right {
         position: absolute;
         top: 2em;
         right: 2em;
+        z-index: 1;
       }
       .bottom {
         position: absolute;
@@ -73,16 +79,18 @@
         left: 0;
         right: 0;
         margin: auto;
+        max-width: 80%;
+        z-index: 1;
       }
       .page {
         background: #fff;
         border: 1px solid #d1d1d1;
-        height: 922px;
+        min-height: 922px;
         margin: auto;
         overflow: hidden;
         padding: 3em;
         position: relative;
-        width: 595px;
+        max-width: 595px;
       }
       @media print {
         body {
@@ -106,7 +114,7 @@
           kitId: 'ana7hlh',
           scriptTimeout: 3000
         },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document)
     </script>
   </head>
